@@ -70,6 +70,12 @@
                     if (e.target.innerText || gameWinner.innerText) return;
 
                     if (player == 1){
+                        console.log("player 1", "moves", row, col);
+                    }else{
+                        console.log("player 2", "moves", row, col);
+                    }
+
+                    if (player == 1){
                         e.target.innerText = "X";
                     }else{
                         e.target.innerText = "O";
